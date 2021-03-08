@@ -1,0 +1,23 @@
+#envoltura{
+width: 600px;
+margin: 0 auto;
+}
+
+header{
+
+    border: 1px solid #000;
+    background-color: #ee9a00;
+    text-align: center;
+    margin-top: 100px;
+}
+
+#main{
+
+border-left: 1px solid #000;
+border-bottom: 1px solid #000;
+border-right: 1px solid #000;
+background-color: #eedc82;
+text-align: justify;
+text-justify: inter-word;
+padding: 10px;
+}
