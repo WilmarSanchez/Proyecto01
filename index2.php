@@ -24,7 +24,7 @@
             echo " ".$usuario1->apellido;
 
             echo "<br/>";
-            $usuario1->saludo();
+            $usuario1->saludar();
 
             $usuario2 = new Usuario("Jina", "Poli");
 
@@ -32,7 +32,7 @@
             $usuario2->apellido = "Poli";
 
             echo "<br/>";
-            $usuario2->saludo();
+            $usuario2->saludar();
             echo "<br/>";
 
             $usuario1->registrar();

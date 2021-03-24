@@ -10,6 +10,12 @@
     <body>
         <?php
             require 'Car.php';
+            require 'Usuario.php';
+            require 'Deportivo.php';
+            require 'Administrador.php';
+            require 'RecursosHumanos.php';
+            require 'Financiero.php';
+            
         ?>
 
 
@@ -70,12 +76,41 @@
 
             echo $carro3->getModelo();
 
-            echo "<br/><br/>Imprmiendo modelos: <br/>".$bmw ->getModelo()."<br/>".
+            echo "<br/><br/>Imprmiendo modelos:  <br/>".$bmw ->getModelo()."<br/>".
             $mercedes->getModelo()."<br/>".$audi->getModelo()."<br/>".
             $carro1->getModelo()."<br/>".$carro2->getModelo()."<br/>".$carro3->getModelo()."<br/>";
 
-        ?>
+       $deportivo1 = new Deportivo();
+       $deportivo1-> getModelo("lamborgini");
 
+       echo "<br />". $deportivo1->pitar();
+       
+       echo "<br />". $deportivo1-> conducirConEstilo();
+
+      /* $carro  = new Car("Mazda");
+       echo "<br />". $carro -> pitar();
+      */ 
+
+     //$Admin1 = new Administrador();
+
+     $financiero = new Financiero("Juan", "Perez");
+     echo "<br />";
+     $financiero->saludar();
+
+     $financiero->setSalario(55);
+     echo "<br />";
+    echo $financiero->definirArea();
+     
+    $RecursosHumanos = new RecursosHumanos("Juana", "De Arco");
+     echo "<br />";
+     $RecursosHumanos->saludar();
+     echo "<br />";
+     $RecursosHumanos->setSalario(1000);
+     echo "<br />";
+    echo $RecursosHumanos->definirArea();
+
+       ?>
+        
 
     </body>
 

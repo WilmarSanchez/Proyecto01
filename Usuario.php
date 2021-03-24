@@ -1,6 +1,6 @@
 <?php
 
-class Usuario
+ abstract class Usuario
 {
 
     public $nombre = "";
@@ -14,7 +14,17 @@ class Usuario
             
     }
 
-    public function saludo(){
+
+
+/*
+  Cuando se realiza el cambio con el Final 
+
+final public function saludar(){
+        echo "Hola ".$this->nombre." ".$this->apellido;
+    }
+este no lo puede usar la clase hija ya que solo se puede usar desde la clase padre
+*/
+ public function saludar(){
         echo "Hola ".$this->nombre." ".$this->apellido;
     }
 

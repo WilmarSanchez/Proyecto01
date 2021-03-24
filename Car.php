@@ -9,7 +9,7 @@ class Car
     public $color = "rojo";
     public $tieneCapota = true;
     public $contenidoTanque;
-    private $modelo = "Sin definir";
+    protected $modelo = "Sin definir";
     private $modelos_permitidos = array("audi", "mazda", "mercedes", "lamborgini");
 
 
@@ -23,7 +23,7 @@ class Car
 
     public function pitar()
     {
-        return "beep";
+        return "beep su carro de modelo ". $this ->modelo;
     }
 
     public function pedirRevision()
