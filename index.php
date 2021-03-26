@@ -15,7 +15,7 @@
             require 'Administrador.php';
             require 'RecursosHumanos.php';
             require 'Financiero.php';
-            
+            require 'Programador.php';
         ?>
 
 
@@ -108,6 +108,18 @@
      $RecursosHumanos->setSalario(1000);
      echo "<br />";
     echo $RecursosHumanos->definirArea();
+    echo "<br />";
+    $usuario1 = new Programador("Felipe" , "Lopez");
+    $usuario1 ->getNombreCompleto();
+    $usuario1->agregarLenguajeDeProgramacionBackend("Python");
+    $usuario1->agregarLenguajeDeProgramacionBackend("C#");
+    $usuario1->agregarLenguajeDeProgramacionBackend("Java");
+    echo "<br />";
+    $usuario1->agregarLenguajeDeProgramacionFrontend("JavaScript");
+    $usuario1->agregarLenguajeDeProgramacionFrontend("Jquery");
+    $usuario1->agregarLenguajeDeProgramacionFrontend("Angular");
+    $usuario1->agregarLenguajeDeProgramacionFrontend("hahaha");
+    echo "<br />";
 
        ?>
         
